@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX</title>
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            height: 75px;
+
+        }
+
+        header {
+            height: 400px;
+            width: 100%;
+        }
+        .imgview{
+            height: 200px; 
+            width: 100%
+        }
+
+        .backgr {
+            background: url("img/europe.jpg") no-repeat center top fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        section {
+            display: flex;
+            height: 700px;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-top: 75px;
+            margin-left: 100px;
+            margin-bottom: 75px;
+            margin-right: 75px;
+        }
+
+        .prefooter {
+			
+            height: 40px;
+            background-color: silver;
+            text-align: center;
+        }
+
+        footer {
+            height: 100px;
+            background-color: black;
+            text-align: center;
+            color: gray;
+            padding-top: 40px;
+        }
+
+        .parag {
+            margin: 0px;
+            height: 200px;
+            margin-bottom: 75px;
+            text-align: center;
+            font-size: 30px;
+            padding: 5px 300px 5px 300px;
+        }
+
+        .mng {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box {
+            height: 400px;
+            width: 48%;
+
+        }
+
+        
+
+        .mid {
+            height: 50%;
+            width: 100%;
+
+        }
+
+        .func {
+            margin: 0;
+            padding: 4px;
+            margin-left: 400px;
+            right: 0;
+        }
+
+        ul.func li {
+            margin-left: 20px;
+            display: inline;
+        }
+
+        ul.func li a {
+            font-size: 30px;
+            background: none;
+            text-decoration: none;
+        }
+
+        .mng h1 {
+            font-size: 40px;
+        }
+
+        .head {
+            text-align: center;
+            color: green;
+        }
+
+        .head h1 {
+            font-size: 70px;
+        }
+
+        .head h2 {
+            font-size: 35px;
+
+        }
+
+        .main-button {
+            display: inline-block;
+            color: khaki;
+			padding: 5px;
+            background: purple;
+            font-size: 15px;
+            border-radius: 50px;
+            border: 3px solid transparent;
+            text-decoration: none;
+        }
+
+        .main-button:hover {
+            background: red;
+        }
+
+        p span {
+            font-size: 20px;
+        }
+
+        .text {
+            text-align: center;
+        }
+        @media (max-width:1230px) {
+            .mng h1 {
+                font-size: 40px;
+            }
+
+            .func {
+                margin: 0;
+                padding: 4px;
+                margin-left: 10px;
+                right: 0;
+            }
+            .parag {
+                margin: 0px;
+                height: 100px;
+                text-align: center;
+                font-size: 10px;
+                padding: 5px 200px 5px 20px;
+            }
+            .text{
+               margin: 0;
+               font-size:10px;
+                padding: 5px 10px 1px 10px;
+            }
+            
+        }
+       
+       @media (max-width:360px) {
+            ul.func li {
+                margin-left: 5px;
+                display: block;
+            }
+
+            ul.func li a {
+                font-size: 20px;
+                background: none;
+                text-decoration: none;
+            }
+          
+
+           .imgview{
+               height: 100px;
+           }
+
+           .parag {
+               margin: 0px;
+               height: 100px;
+               text-align: center;
+               font-size: 10px;
+               padding: 5px 10px 5px 10px;
+           }
+
+
+       }
+       
+      
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <!--Навігація-->
+        <div class="backgr mng">
+            <h1>Travel Portal</h1>
+            <ul class="func">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Events</a></li>
+                <li><a href="">Take Action</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="backgr">
+        <div class="head">
+            <h2>We are all together</h2>
+            <h1>WE ARE EUROPE</h1>
+            <button class="main-button">
+                <h3>Watch now</h3>
+            </button>
+        </div>
+
+
+    </header>
+
+    <section>
+        <!--Головна секція-->
+        <p class="parag">Experience Europe through our stories<br><br>
+            <span>Is inquiry no he several excited am. 
+			Hard do me sigh with west same lady. 
+			Any delicate you how kindness horrible outlived servants. 
+			Do play they miss give so up. 
+			Took sold add play may none him few. 
+			In expression an solicitude principles in do</span>
+        </p>
+        <div class="mng">
+            <div class="box"><img class="imgview" src="img/about.jpg">
+                <div class="mid">
+                    <h1 class="text">ABOUT</h1>
+                    <p class="text">Dissimilar admiration so terminated no in contrasted it.
+					Called though excuse length ye needed it he having. An concluded.</p>
+                </div>
+            </div>
+            <div class="box"><img class="imgview" src="img/takeaction.jpg">
+                <div class="mid">
+                    <h1 class="text">TAKE ACTION</h1>
+                    <p class="text">Girl quit if case mr sing as no have. 
+					Indulgence contrasted sufficient to unpleasant in in insensible favourable. 
+					Considered discovered ye sentiments pro</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="prefooter">
+	<br>
+        Want to know more about Europe?
+		
+    </div>
+
+    <footer>
+        
+        2020 NAU
+    </footer>
+</body>
+
+</html>
